@@ -81,6 +81,26 @@ Newest first. Note: This changelog shows a history for the program front-end onl
 
 <!-- changelog -->
 
+### 26312.1258 - 2026-11-08
+
+**Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
+
+Updates now offer themselves, as in Examulator. Full notes: [ExamAdvantage changelog](https://www.certificationtoolanddie.com/exam-advantage/changelog).
+
+**New**
+- **Desktop update banner:** when a newer version is published, the program says so; **Update now** downloads it, checks its SHA-256, installs it and restarts the program. Nothing is installed until you click, and never during a quiz or a course download.
+- **Android in-app updates** for copies installed from Google Play: the new version downloads in the background, then "Restart to update".
+- **Desktop data in your user profile:** `%LOCALAPPDATA%\CertificationToolAndDie\ExamAdvantage` (macOS and Linux: `~/.local/share/CertificationToolAndDie/ExamAdvantage`). The first start copies the old `db` folder there, checks it and leaves the original. For a portable copy, put `{ "ExamAdvantage": { "DataPath": "db" } }` in `appsettings.Local.json` beside the program.
+
+**Changed**
+- Courses and program updates come only from GitHub; Google Drive and the versions page are no longer read.
+- The browser version (Node.js) is retired: 26312.0216 is its last release. Move with **Manage progress**: download a backup there and restore it in the desktop program.
+
+**Fixes**
+- An Examulator "Study this topic" link now installs a course that is published only on GitHub.
+
+**Upgrade:** desktop: install this version by hand once (unzip over the old folder or into a new one); after that, updates offer themselves. Android: from the Play Store. Progress, notes, bookmarks and backups carry over.
+
 ### 26312.0216 - 2026-11-08
 
 **Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
