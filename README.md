@@ -8,7 +8,7 @@ You can read more about ExamAdvantage on our website: certificationtoolanddie.co
 
 ## Downloads
 
-Get the files from the [latest release](https://github.com/ctdltd/Examulator/releases/latest).
+Get the files from the [latest release](https://github.com/ctdltd/ExamAdvantage/releases/latest).
 
 | File | For |
 |---|---|
@@ -25,10 +25,10 @@ ExamAdvantage-Program-{version}.zip, the browser version that ran on Node.js, is
 
 ## Installing
 
-Windows: unzip the program zip into a folder of your choice (for example C:\ExamAdvantage) and run ExamAdvantage.Web.exe. If Windows SmartScreen warns about an unrecognized app, choose More info, then Run anyway. If you're concerned about viruses, etc. then by all means please scan the installation files yourself, and do not simply run them because we're saying "trust us". (You are, after all, studying for a Cybersecurity examination! :) )
-macOS: unzip into a folder of your choice. In Terminal, in that folder, run chmod +x ExamAdvantage.Web and xattr -dr com.apple.quarantine . once, then start it with ./ExamAdvantage.Web. If macOS still refuses to run it (for example "killed" on Apple Silicon), run codesign --force --sign - ExamAdvantage.Web in the same folder and try again.
-Linux: unzip into a folder of your choice, run chmod +x ExamAdvantage.Web once, then ./ExamAdvantage.Web.
-Android: install from Google Play, or allow installs from unknown sources and open the APK.
+- Windows: unzip the program zip into a folder of your choice (for example C:\ExamAdvantage) and run ExamAdvantage.Web.exe. If Windows SmartScreen warns about an unrecognized app, choose More info, then Run anyway. If you're concerned about viruses, etc. then by all means please scan the installation files yourself, and do not simply run them because we're saying "trust us". (You are, after all, studying for a Cybersecurity examination! :) )
+- macOS: unzip into a folder of your choice. In Terminal, in that folder, run chmod +x ExamAdvantage.Web and xattr -dr com.apple.quarantine . once, then start it with ./ExamAdvantage.Web. If macOS still refuses to run it (for example "killed" on Apple Silicon), run codesign --force --sign - ExamAdvantage.Web in the same folder and try again.
+- Linux: unzip into a folder of your choice, run chmod +x ExamAdvantage.Web once, then ./ExamAdvantage.Web.
+- Android: install from Google Play, or allow installs from unknown sources and open the APK.
 
 The PC program opens in your web browser at http://localhost:5000. Keep its window (the console) open while you study; closing it stops the program. If another program already uses port 5000, start it with another port, for example ExamAdvantage.Web --urls http://localhost:5050.
 
@@ -42,31 +42,38 @@ To make a copy of your progress, notes, bookmarks and preferences, use Manage pr
 
 ## Updating
 
-Courses: the course list shows when a newer version of an installed course is published; click it to update. Your progress is kept.
-PC programs: When you run the program, it checks for a new version in the github repo and, if one exists, asks if you want to install the update. The db folder is not in the zip, so your courses and progress stay. Make a backup first if you want to be safe.
-Android: Google Play updates the app; with the APK, install the new APK over the old one.
+- Courses: the course list shows when a newer version of an installed course is published; click it to update. Your progress is kept.
+- PC programs: When you run the program, it checks for a new version in the github repo and, if one exists, asks if you want to install the update. The db folder is not in the zip, so your courses and progress stay. Make a backup first if you want to be safe.
+- Android: Google Play updates the app; with the APK, install the new APK over the old one.
 
-##Installing a course by hand (optional, PC only, useful on a machine that can't reach GitHub from inside the program)
+## Installing a course by hand
+
+Optional, PC only: useful on a machine that can't reach GitHub from inside the program.
 
 Download ExamAdvantage-Course-{course id}-{version}.zip from the course releases (for example ExamAdvantage-Course-ISC2_CISSP_2027-26308.01.zip). Every course published so far stays available; the course list in the program always offers the newest. Check it against that release's SHA256SUMS.txt (see below). With the program closed, copy db/{course id}.db from the zip into the program's db folder (create the folder if it isn't there), then start the program.
 
 ## Moving from the browser version
 
-The browser version (ExamAdvantage-Program-*.zip, started with launch.bat or launch.sh and run on Node.js) is no longer updated; 26312.0216 is its last release. It keeps working and still downloads course updates, but new program features and fixes come only in ExamAdvantage2. To move:
+The browser version (`ExamAdvantage-Program-*.zip`, started with launch.bat or launch.sh and run on Node.js) is no longer updated; 26312.0216 is its last release. It keeps working and still downloads course updates, but new program features and fixes come only in ExamAdvantage2. To move:
 
-In the browser version, choose Manage progress at the bottom of the screen and Download backup.
-Install ExamAdvantage2 (above) and download your courses in it.
-In ExamAdvantage2, choose Manage progress, pick the backup file and restore it.
+1. In the browser version, choose Manage progress at the bottom of the screen and Download backup.
+2. Install ExamAdvantage2 (above) and download your courses in it.
+3. In ExamAdvantage2, choose Manage progress, pick the backup file and restore it.
 
 ## Checking a download:
 
 Compare the file's SHA-256 with SHA256SUMS.txt (GitHub also shows each file's SHA-256 on the release page):
 
-Windows (PowerShell): Get-FileHash .\ExamAdvantage2-Program-win_x64-....zip -Algorithm SHA256
-macOS / Linux: shasum -a 256 ExamAdvantage2-Program-....zip
-Versions
+- Windows (PowerShell): Get-FileHash .\ExamAdvantage2-Program-win_x64-....zip -Algorithm SHA256
+- macOS / Linux: shasum -a 256 ExamAdvantage2-Program-....zip
+
+## Versions
 
 Programs are YYDDD.HHmm: the year and day of the year, then the time of the release (26312.0216 = 8 November 2026, 02:16). Releases up to 26298_01 used YYDDD_VV instead. Courses are YYDDD.VV: the day of the year and a release number (26308.01).
+
+## Support
+
+Reddit message to u/mikedn02908, the r/ctdltd subreddit, or support@certificationtoolanddie.com. For a problem with the program, say which version and which platform you use, and what you did just before it happened.
 
 ## Changelog
 
