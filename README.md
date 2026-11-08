@@ -70,7 +70,7 @@ Programs are YYDDD.HHmm: the year and day of the year, then the time of the rele
 
 ## Changelog
 
-Newest first.
+Newest first. Note: This changelog shows a history for the program front-end only. To see the changelog for the courses, visit the ExamAdvantage-Courses repository.
 
 <!-- changelog -->
 
