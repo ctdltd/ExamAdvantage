@@ -83,7 +83,7 @@ Newest first. Note: This changelog shows a history for the program front-end onl
 
 ### 26312.0216 - 2026-11-08
 
-**Programs:** ExamAdvantage (browser version) · ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
+**Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
 
 The first program update since 26272_01. Full notes: [ExamAdvantage changelog](https://www.certificationtoolanddie.com/exam-advantage/changelog).
 
