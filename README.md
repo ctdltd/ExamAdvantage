@@ -1,6 +1,6 @@
 # ExamAdvantage
 
-Free study program for ISC2, ISACA, CompTIA, EC-Council and PECB certifications, by Certification Tool and Die, Ltd. Co. (www.certificationtoolanddie.com). Each course follows its exam outline objective by objective: a study page for every topic with a Deep Dive, a Real-World Example and an Exam Tip, practice questions with an explanation for every answer, progress tracking, review scheduling, read-aloud and a continuing-education report (CPE, CEU, ECE or CPD, depending on the certifying body). ExamAdvantage works alongside [Examulator](https://github.com/ctdltd/Examulator), the practice-exam program: each can open the matching topic or objective in the other.
+Free study program for ISC2, ISACA, CompTIA, EC-Council and PECB certifications, by [Certification Tool and Die, Ltd. Co.](www.certificationtoolanddie.com). Each course follows its exam outline objective by objective: a study page for every topic with a Deep Dive, a Real-World Example and an Exam Tip, practice questions with an explanation for every answer, progress tracking, review scheduling, read-aloud and a continuing-education report (CPE, CEU, ECE or CPD, depending on the certifying body). ExamAdvantage works alongside [Examulator](https://github.com/ctdltd/Examulator), the practice-exam program: each can open the matching topic or objective in the other.
 
 This repository holds the program downloads. Courses are published separately, in ctdltd/ExamAdvantage-Courses: the app lists them and downloads the ones you want to study. 
 
