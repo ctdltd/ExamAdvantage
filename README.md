@@ -43,7 +43,7 @@ To make a copy of your progress, notes, bookmarks and preferences, use Manage pr
 ## Updating
 
 Courses: the course list shows when a newer version of an installed course is published; click it to update. Your progress is kept.
-PC program: download the new zip and unzip it over your existing program folder, replacing the files when asked. The db folder is not in the zip, so your courses and progress stay. (If you unzip into a new folder instead, copy the old db folder into it, or restore a backup.) Make a backup first if you want to be safe.
+PC programs: When you run the program, it checks for a new version in the github repo and, if one exists, asks if you want to install the update. The db folder is not in the zip, so your courses and progress stay. Make a backup first if you want to be safe.
 Android: Google Play updates the app; with the APK, install the new APK over the old one.
 
 ##Installing a course by hand (optional, PC only, useful on a machine that can't reach GitHub from inside the program)
