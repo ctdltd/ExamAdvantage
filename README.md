@@ -6,6 +6,10 @@ This repository holds the program downloads. Courses are published separately, i
 
 You can read more about Exam Advantage on our website: [www.certificationtoolanddie.com/exam-advantage](https://www.certificationtoolanddie.com/exam-advantage)
 
+## Versions
+
+Programs are versioned as YYDDD.HHmm: the year and day of the year, then the time of the release (26312.0216 = 8 November 2026, 02:16). 
+
 ## Downloads
 
 Get the files from the [latest release](https://github.com/ctdltd/ExamAdvantage/releases/latest).
@@ -19,7 +23,7 @@ Get the files from the [latest release](https://github.com/ctdltd/ExamAdvantage/
 | EXAMADVANTAGE-{version}.apk | Android, for side-loading (the same app is on Google Play) |
 | SHA256SUMS.txt | Checksums for every file in the release |
 
-The PC programs are self-contained: they need no .NET, Node.js or other runtime installed.
+The PC programs are self-contained: they need no .NET, Node.js or other runtime installed. No account is required, there are no ads, and no telemetry.
 
 ExamAdvantage-Program-{version}.zip, the browser version that ran on Node.js, is retired: 26312.0216 is its last release. It is available here so older users can update to the newer version to get bug fixes, but we will not be publishing further updates for it. See Moving from the browser version if you are currently on the browser version. If you are a new user, please use one of the ExamAdvantage2 zip files for installation.
 
@@ -36,7 +40,7 @@ Then choose a certifying body's tab and click a course to download it. Downloads
 
 ## Where your data is kept
 
-On the PC, courses and your progress (progress.db) are kept in the db folder inside the program folder. On Android they are kept inside the app.
+On the PC, courses and your progress (progress.db) are kept in the %LOCALAPPDATA%\certificationtoolanddie folder inside the program folder. On Android they are kept inside the app.
 
 To make a copy of your progress, notes, bookmarks and preferences, use Manage progress at the bottom of the screen and choose Download backup. A backup restores on any device and in any version of ExamAdvantage, including the browser version and Android.
 
@@ -66,10 +70,6 @@ Compare the file's SHA-256 with SHA256SUMS.txt (GitHub also shows each file's SH
 
 - Windows (PowerShell): Get-FileHash .\ExamAdvantage2-Program-win_x64-....zip -Algorithm SHA256
 - macOS / Linux: shasum -a 256 ExamAdvantage2-Program-....zip
-
-## Versions
-
-Programs are YYDDD.HHmm: the year and day of the year, then the time of the release (26312.0216 = 8 November 2026, 02:16). Releases up to 26298_01 used YYDDD_VV instead. Courses are YYDDD.VV: the day of the year and a release number (26308.01).
 
 ## Support
 
