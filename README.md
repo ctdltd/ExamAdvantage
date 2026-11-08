@@ -1,6 +1,6 @@
 # Exam Advantage
 
-Exam Advantage is a free study program for ISC2, ISACA, CompTIA, EC-Council and PECB certifications, by [Certification Tool and Die, Ltd. Co.](www.certificationtoolanddie.com). Each course follows its exam outline objective by objective: a study page for every topic with a Deep Dive, a Real-World Example and an Exam Tip, practice questions with an explanation for every answer, progress tracking, review scheduling, read-aloud and a continuing-education report (CPE, CEU, ECE or CPD, depending on the certifying body). Exam Advantage works alongside [Examulator](https://github.com/ctdltd/Examulator), the practice-exam program: each can open the matching topic or objective in the other.
+Exam Advantage is a free study program for ISC2, ISACA, CompTIA, EC-Council and PECB certifications, by [Certification Tool and Die, Ltd. Co.](https://www.certificationtoolanddie.com). Each course follows its exam outline objective by objective: a study page for every topic with a Deep Dive, a Real-World Example and an Exam Tip, practice questions with an explanation for every answer, progress tracking, review scheduling, read-aloud and a continuing-education report (CPE, CEU, ECE or CPD, depending on the certifying body). Exam Advantage works alongside [Examulator](https://github.com/ctdltd/Examulator), the practice-exam program: each can open the matching topic or objective in the other.
 
 This repository holds the program downloads. Courses are published separately, in [ctdltd/ExamAdvantage-Courses](https://www.github.com/ctdltd/ExamAdvantage-Courses): the app lists them and downloads the ones you want to study. 
 
@@ -40,21 +40,30 @@ Then choose a certifying body's tab and click a course to download it. Downloads
 
 ## Where your data is kept
 
-On the PC, courses and your progress (progress.db) are kept in the %LOCALAPPDATA%\certificationtoolanddie folder inside the program folder. On Android they are kept inside the app.
+On the PC, courses and your progress (progress.db) are kept in your user profile, not in the program folder, so a new version in any folder finds them:
+
+- Windows: %LOCALAPPDATA%\CertificationToolAndDie\ExamAdvantage
+- macOS and Linux: ~/.local/share/CertificationToolAndDie/ExamAdvantage
+
+Versions up to 26312.0216 kept them in the db folder inside the program folder. The first time 26312.1258 or later starts, it copies that folder to the new place (with many courses this takes a minute; the program window shows each file), checks every copy and leaves the old folder as it was. You can delete the old db folder once everything works.
+
+To keep everything beside the program instead (for example on a USB stick), create a file named appsettings.Local.json in the program folder containing `{ "ExamAdvantage": { "DataPath": "db" } }`. Updates never change that file.
+
+On Android they are kept inside the app.
 
 To make a copy of your progress, notes, bookmarks and preferences, use Manage progress at the bottom of the screen and choose Download backup. A backup restores on any device and in any version of ExamAdvantage, including the browser version and Android.
 
 ## Updating
 
 - Courses: the course list shows when a newer version of an installed course is published; click it to update. Your progress is kept.
-- PC programs: When you run the program, it checks for a new version in the github repo and, if one exists, asks if you want to install the update. The db folder is not in the zip, so your courses and progress stay. Make a backup first if you want to be safe.
-- Android: Google Play updates the app; with the APK, install the new APK over the old one.
+- PC programs: When you run the program, it checks for a new version in the GitHub repo and, if one exists, shows a banner at the top of the screen. Click Update now: the program closes, downloads the new version, checks its SHA-256, installs it and starts again in a new browser tab. Nothing is installed until you click, and your courses and progress are never touched. Make a backup first if you want to be safe. Versions up to 26312.0216 have no banner: install 26312.1258 or later by hand once (unzip it over your program folder or into a new one).
+- Android: Google Play updates the app, and the app offers each new version itself ("Restart to update"); with the APK, install the new APK over the old one.
 
 ## Installing a course by hand
 
 Optional, PC only: useful on a machine that can't reach GitHub from inside the program.
 
-Download ExamAdvantage-Course-{course id}-{version}.zip from the course releases (for example ExamAdvantage-Course-ISC2_CISSP_2027-26308.01.zip). Every course published so far stays available; the course list in the program always offers the newest. Check it against that release's SHA256SUMS.txt (see below). With the program closed, copy db/{course id}.db from the zip into the program's db folder (create the folder if it isn't there), then start the program.
+Download ExamAdvantage-Course-{course id}-{version}.zip from the course releases (for example ExamAdvantage-Course-ISC2_CISSP_2027-26308.01.zip). Every course published so far stays available; the course list in the program always offers the newest. Check it against that release's SHA256SUMS.txt (see below). With the program closed, copy db/{course id}.db from the zip into your data folder (see Where your data is kept), then start the program.
 
 ## Moving from the browser version
 
