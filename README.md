@@ -90,6 +90,21 @@ Newest first. Note: This changelog shows a history for the program front-end onl
 
 <!-- changelog -->
 
+### 26325.1552 - 2026-11-21
+
+**Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
+
+Two new CMMC courses, and new courses now reach the app without a program update. Full notes: [ExamAdvantage changelog](https://www.certificationtoolanddie.com/exam-advantage/changelog).
+
+**New**
+- **CMMC Certified Assessor (CCA)** and **CMMC Certified Professional (CCP)** in the course list under ISACA: 17,117 pages and 39,645 practice questions between them, current to 32 CFR Part 170, the DFARS phase-in and NIST SP 800-171 Rev 2. Download them like any other course (course release 26324.01).
+- **The course list updates itself:** when a new course is published, it appears in the course list at the next start, without a program update. If a course needs a newer program, the list says how many more courses an update would bring.
+
+**Changed**
+- Security updates to the .NET packages the program uses.
+
+**Upgrade:** desktop: click **Update now** when the banner appears, or install this version by hand. Android: from the Play Store. Progress, notes, bookmarks and backups carry over.
+
 ### 26312.1258 - 2026-11-08
 
 **Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
