@@ -90,6 +90,13 @@ Newest first. Note: This changelog shows a history for the program front-end onl
 
 <!-- changelog -->
 
+### 26325.1647 - 2026-11-21
+
+**Programs:** ExamAdvantage (browser version, final release)
+
+- Final release of the browser version of ExamAdvantage, which is now retired. At start it shows a notice pointing to the new ExamAdvantage for Windows, macOS, Linux, Android and (when published) iPhone and iPad: https://www.CertificationToolAndDie.com/exam-advantage
+- To move your progress, make a backup in the browser version and restore it in the new version.
+
 ### 26325.1552 - 2026-11-21
 
 **Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
