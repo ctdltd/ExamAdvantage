@@ -90,6 +90,20 @@ Newest first. Note: This changelog shows a history for the program front-end onl
 
 <!-- changelog -->
 
+### 26330.0657 - 2026-11-26
+
+**Programs:** ExamAdvantage2 (Windows, macOS, Linux) · ExamAdvantage (Android APK)
+
+Shorter ways through a course, and a study plan built from your weak points. Full notes: [ExamAdvantage changelog](https://www.certificationtoolanddie.com/exam-advantage/changelog).
+
+**New**
+- **Reading modes:** Full, Core (main text and Exam Tip; deep dive and example folded) or Key points (the Exam Tip only), chosen on every page.
+- **Key points review:** the Exam Tips of a section, or the whole course, on one page.
+- **Study plan:** the pages to read next, weighted by the exam's domains and your results, in the mode each needs, spread over the days to your exam; Examulator can send it your practice results.
+- **CISM 2026** in the course list under ISACA, next to CISM 2024.
+
+**Upgrade:** desktop: click **Update now** when the banner appears, or install this version by hand. Android: from the Play Store. Progress, notes, bookmarks and backups carry over.
+
 ### 26325.1647 - 2026-11-21
 
 **Programs:** ExamAdvantage (browser version, final release)
